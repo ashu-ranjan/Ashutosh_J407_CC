@@ -10,12 +10,13 @@ public class DbProperties {
     static {
         try {
 
-            InputStream in = DbProperties.class.getClassLoader().getResourceAsStream("AJ407.properties");
+            InputStream in = DbProperties.class.getClassLoader().getResourceAsStream("AshutoshJ407.properties");
+            properties.load(in);
+
             if (in == null) {
                 throw new RuntimeException("Resource file not found!");
             }
 
-            properties.load(in);
 
         } catch (IOException e) {
             throw new RuntimeException("Database Connection Failed!", e);
