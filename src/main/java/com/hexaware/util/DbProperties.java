@@ -11,11 +11,12 @@ public class DbProperties {
         try {
 
             InputStream in = DbProperties.class.getClassLoader().getResourceAsStream("AshutoshJ407.properties");
-            properties.load(in);
+
 
             if (in == null) {
                 throw new RuntimeException("Resource file not found!");
             }
+            properties.load(in);
 
 
         } catch (IOException e) {

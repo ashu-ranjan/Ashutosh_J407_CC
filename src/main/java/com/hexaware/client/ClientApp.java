@@ -6,8 +6,6 @@ import com.hexaware.entity.*;
 import com.hexaware.exception.ProductAlreadyExistException;
 import com.hexaware.exception.ProductNotExistException;
 import com.hexaware.util.TableFormatterUtil;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
